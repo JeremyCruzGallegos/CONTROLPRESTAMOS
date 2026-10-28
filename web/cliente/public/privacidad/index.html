@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo ControlPrestamos Cliente accede, utiliza y conserva los datos de la cuenta de Google, los préstamos y los pagos.">
+  <meta name="theme-color" content="#16332e">
+  <title>Política de privacidad · ControlPrestamos Cliente</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header"><div class="wrap header-inner"><a class="brand" href="../" aria-label="ControlPrestamos Cliente, inicio"><span class="brand-mark" aria-hidden="true">CP</span>ControlPrestamos Cliente</a><nav aria-label="Navegación principal"><a href="../">Inicio</a><a href="./" aria-current="page">Privacidad</a><a href="../condiciones/">Condiciones</a></nav></div></header>
+  <main id="contenido" class="wrap">
+    <article class="document">
+      <p class="eyebrow">Información sobre tus datos</p>
+      <h1>Política de privacidad</h1>
+      <p class="date">Última actualización: <time datetime="2026-10-28">28 de octubre de 2026</time>.</p>
+      <p>Esta política describe el uso de los datos en <strong>ControlPrestamos Cliente</strong>, una aplicación Android para gestionar préstamos, clientes, pagos, moras y capital mediante libros configurados de Google Sheets.</p>
+      <p>Contacto del responsable de la aplicación para asistencia y solicitudes de privacidad: <a href="mailto:soporte@example.com">soporte@example.com</a>. Quien administra cada libro también decide qué datos registra y con qué personas comparte ese archivo.</p>
+
+      <h2>1. Información a la que accedemos</h2>
+      <ul>
+        <li><strong>Identidad de Google:</strong> correo electrónico, confirmación del correo e identificador de cuenta, necesarios para identificar la sesión y separar la información guardada de cada cuenta.</li>
+        <li><strong>Registros del libro seleccionado:</strong> datos de clientes y garantías introducidos en la hoja, identificadores de préstamos, importes, tasas, fechas, cuotas, pagos, moras, aportes, capital y resúmenes financieros.</li>
+        <li><strong>Operaciones:</strong> identificadores y fechas de cambios, resultados de guardado y, según la operación, el correo o identificador de la cuenta que la realizó.</li>
+        <li><strong>Preferencias locales:</strong> cuenta y libro seleccionados, apariencia y configuración de recordatorios, como horarios, días, cantidad de avisos, sonido y privacidad del contenido.</li>
+      </ul>
+
+      <h2>2. Permisos de Google y su finalidad</h2>
+      <p>La app solicita los permisos <strong>openid</strong>, <strong>userinfo.email</strong> y <strong>spreadsheets</strong>. Los utiliza para reconocer la cuenta, consultar el libro y guardar las operaciones que el usuario solicita desde la aplicación.</p>
+      <p>El permiso de edición de Google Sheets es amplio y puede permitir acceder a otras hojas disponibles para la cuenta. La versión actual de la app dirige sus operaciones a el identificador configurado del libro independiente del cliente. No ofrece una búsqueda general de los archivos de Drive.</p>
+      <p>Google gestiona el inicio de sesión y la autorización. ControlPrestamos Cliente no recibe ni almacena la contraseña de Google.</p>
+
+      <h2>3. Cómo utilizamos los datos</h2>
+      <p>Utilizamos la información para mostrar préstamos y calendarios, gestionar pagos y moras, registrar cambios de capital, calcular y presentar resúmenes, identificar operaciones y comprobar reintentos de guardado. También guardamos información local para consultar datos previamente cargados y conservar borradores o envíos pendientes. Los cambios de pagos y moras se guardan en el teléfono y se envían automáticamente a Google Sheets en segundo plano cuando la autorización y la conexión lo permiten; un fallo temporal de conexión puede retrasar ese envío.</p>
+      <p>Los recordatorios de cobros se preparan en el teléfono a partir de los datos descargados y los cambios locales. Pueden incluir fecha, cantidad de cuotas, nombres de clientes e importes. Puedes desactivarlos o elegir ocultar nombres e importes en <strong>Configuración → Notificaciones</strong>, y controlar su visibilidad y permisos desde Android. La información puede ser visible en la pantalla bloqueada según la configuración del dispositivo.</p>
+      <p>No vendemos datos de los usuarios ni los utilizamos para publicidad, entrenamiento de modelos de inteligencia artificial o decisiones de concesión de crédito. La app es una herramienta de registro y seguimiento; las operaciones de préstamo las decide quien administra el negocio.</p>
+      <p>El uso y la transferencia de información recibida de las API de Google cumplen la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuarios de los Servicios de API de Google</a>, incluidos sus requisitos de uso limitado.</p>
+
+      <h2>4. Dónde se guarda la información</h2>
+      <p><strong>En Google Sheets:</strong> los registros y sus cambios se guardan en el libro seleccionado. Los historiales y comprobantes de operaciones pueden conservar valores anteriores, el usuario y la fecha para auditoría y prevención de duplicados.</p>
+      <p><strong>En el teléfono:</strong> la app conserva preferencias, una copia de los datos descargados, calendarios, borradores y una cola de operaciones pendientes en su almacenamiento privado. Los registros y operaciones se separan por cuenta y libro. El token de acceso utilizado por la app se mantiene en memoria; la aplicación no guarda un token de renovación propio. Google Play Services gestiona la autorización de la cuenta.</p>
+      <p><strong>Operaciones financieras:</strong> el teléfono se comunica directamente con Google Sheets para registrar y sincronizar préstamos, pagos y caja.</p>
+      <p><strong>Acceso desde ControlPrestamos Consultas:</strong> si el prestamista utiliza la función de códigos y permisos para clientes, interviene un servicio alojado en Cloudflare. Este servicio procesa la identificación de Google, las sesiones, los nombres y códigos de cliente, los identificadores de préstamos y las autorizaciones de visualización. Los registros de acceso se conservan en el mismo libro de Google Sheets. Para mostrar la información autorizada al cliente, el servicio lee sus préstamos, cuotas, pagos y moras y los devuelve a la app Consultas.</p>
+      <p><strong>Respaldo en Excel:</strong> cuando solicitas una exportación, la app genera un archivo con la información local del libro seleccionado, incluidos cambios pendientes. Tú eliges dónde guardarlo. Ese archivo queda disponible para quien tenga acceso a la ubicación elegida y no incorpora una restauración automática dentro de la app.</p>
+
+      <h2>5. Quién puede acceder y qué se comparte</h2>
+      <p>Las solicitudes necesarias para identificar la cuenta y leer o actualizar el libro se transmiten a los servicios de Google. Los datos de la hoja están disponibles para quienes tengan acceso al archivo conforme a los permisos que gestione su propietario, incluidos los permisos mediante enlace si están habilitados.</p>
+      <p>La función opcional de Consultas transmite sus solicitudes al servicio en Cloudflare. El prestamista decide qué clientes pueden visualizar sus préstamos y puede retirar ese permiso. El servicio comprueba la cuenta y la autorización antes de devolver los datos asignados.</p>
+      <p>La app no publica automáticamente el libro ni añade colaboradores. El correo del autor de un cambio puede quedar en los historiales del mismo libro y ser visible para quienes tengan acceso a esas pestañas.</p>
+      <p>Un acceso técnico por parte de la persona que presta asistencia requiere que el usuario lo solicite y lo autorice, o que sea necesario para cumplir una obligación aplicable. Los datos de Google no se transfieren a terceros para fines ajenos a las funciones descritas.</p>
+
+      <h2>6. Conservación y eliminación</h2>
+      <p>Los datos del libro se conservan hasta que su administrador los elimine o establezca otra política de conservación. <strong>Eliminar un préstamo desde la app conserva un respaldo de sus valores y los historiales para auditoría; no equivale a borrar por completo todos los datos personales de ese préstamo.</strong> Para solicitar una eliminación completa, contacta con el administrador del libro o escribe al correo indicado en esta política.</p>
+      <p>Cerrar sesión elimina la sesión de la app y las copias principales de datos y colas locales del libro del cliente de esa cuenta. Antes de cerrar sesión, la aplicación requiere resolver los borradores y envíos pendientes. Para eliminar todos los datos locales de la aplicación, incluidas sus preferencias, utiliza <strong>Ajustes de Android → Aplicaciones → ControlPrestamos Cliente → Almacenamiento → Borrar datos</strong>. Los nombres pueden variar según el teléfono. Esto no borra los datos guardados en Google Sheets y puede descartar cambios que aún no se hayan enviado.</p>
+      <p>Si escribes al correo de asistencia, el mensaje y la información que decidas incluir se utilizarán para atender tu consulta y se conservarán durante el tiempo necesario para gestionarla y cumplir las obligaciones aplicables.</p>
+
+      <h2>7. Cómo retirar el acceso de Google</h2>
+      <p>Puedes revisar y retirar el acceso desde <a href="https://myaccount.google.com/connections">las conexiones de tu cuenta de Google</a>. Retirar el permiso impide nuevas consultas y guardados hasta que vuelvas a autorizar. No elimina automáticamente los registros del libro ni las copias locales ya guardadas.</p>
+      <p>Para consultar, corregir o solicitar la eliminación de tus datos, contacta con el administrador del libro o escribe a <a href="mailto:soporte@example.com">soporte@example.com</a>. Indica qué información quieres revisar, sin enviar contraseñas, códigos de acceso ni tokens.</p>
+
+      <h2>8. Seguridad y esta página web</h2>
+      <p>La aplicación utiliza HTTPS para comunicarse con Google y el almacenamiento privado de Android para sus archivos. El acceso a la hoja depende de la autorización de Google y de los permisos efectivos del archivo.</p>
+      <p>Esta web es informativa: no solicita iniciar sesión, no contiene formularios ni incorpora publicidad, analítica o cookies propias. El proveedor de alojamiento puede tratar datos técnicos de las solicitudes, como la dirección IP y la información del navegador, para servir y proteger el sitio. El proveedor de alojamiento que corresponda aplica además su propia política de privacidad. Si decides escribir por correo, tu proveedor de correo gestionará ese envío.</p>
+
+      <h2>9. Cambios y contacto</h2>
+      <p>Actualizaremos esta política cuando cambien las funciones o el tratamiento de datos de la app. La fecha de la versión vigente aparece al inicio de esta página.</p>
+      <p><strong>ControlPrestamos Cliente</strong><br>Asistencia y privacidad: <a href="mailto:soporte@example.com">soporte@example.com</a>.</p>
+    </article>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>ControlPrestamos Cliente · created by WJenzo</span><nav aria-label="Información"><a href="../">Inicio</a><a href="./" aria-current="page">Política de privacidad</a><a href="../condiciones/">Condiciones de uso</a></nav></div></footer>
+</body>
+</html>

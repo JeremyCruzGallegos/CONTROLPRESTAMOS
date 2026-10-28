@@ -1,0 +1,21 @@
+name = "controlprestamos-consultas"
+main = "dist/worker.mjs"
+compatibility_date = "2026-10-27"
+workers_dev = true
+
+[vars]
+# Replace the origin after creating the Worker. Keep the Google secret in Secrets.
+PUBLIC_ORIGIN = ""
+GOOGLE_CLIENT_ID = ""
+# Gmail of the lender who will approve customer accounts; configure explicitly.
+ADMIN_EMAIL = ""
+# Optional: explicitly trusted additional administrators, separated by comma.
+ADMIN_ADDITIONAL_EMAILS = ""
+SPREADSHEET_ID = ""
+SUPPORT_EMAIL = ""
+
+[build]
+command = "python3 ../tools/preparar_servidor_consultas.py"
+
+# Secrets: GOOGLE_CLIENT_SECRET, SHEETS_SERVICE_ACCOUNT_JSON
+# Use Workers Free. No triggers, Apps Script, or background imports.

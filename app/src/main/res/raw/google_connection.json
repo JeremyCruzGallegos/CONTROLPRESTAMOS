@@ -1,0 +1,7 @@
+{
+  "productionBookId": "YOUR_SPREADSHEET_ID_REPLACE_ME",
+  "testBookId": "",
+  "deploymentId": "",
+  "scriptScopes": [],
+  "copyWritesVerified": false
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ControlPrestamos" parent="Theme.ControlPrestamos.Base">
+        <item name="android:windowSplashScreenBackground">#0B111E</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/wj_2__2_</item>
+    </style>
+</resources>
